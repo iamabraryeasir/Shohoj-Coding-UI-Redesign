@@ -382,9 +382,108 @@
                 </div>
 
                 <div class="flex justify-center items-center w-full mt-8">
-                    <a href="#" class="bg-shohoj-green font-shohoj-bangla text-white text-lg px-6 py-2 rounded-lg font-medium"
+                    <a
+                        href="#"
+                        class="bg-shohoj-green font-shohoj-bangla text-white text-lg px-6 py-2 rounded-lg font-medium"
                         >ডিটেইলড কারিকুলাম দেখুন</a
                     >
+                </div>
+            </section>
+
+            <!-- bootcamp features section -->
+            <section id="bootcamp-feature-section" class="py-6 px-8 md:px-0">
+                <div class="flex flex-col items-center">
+                    <h3
+                        class="text-center font-shohoj-bangla font-semibold text-2xl md:text-3xl"
+                    >
+                        বুটক্যাম্পে আপনি পাচ্ছেন
+                    </h3>
+                    <div
+                        class="bg-shohoj-blue w-[250px] md:w-[350px] h-1 rounded-xl"
+                    ></div>
+                </div>
+
+                <div
+                    class="max-w-[960px] grid grid-cols-1 gap-6 mt-6 md:grid-cols-2 mx-auto font-shohoj-bangla font-medium text-2xl"
+                >
+                    <div
+                        class="bg-shohoj-gray-bg rounded-lg p-8 flex flex-col items-start gap-4"
+                    >
+                        <div class="flex items-center gap-3">
+                            <img
+                                src="../assets/images/icons/list_icon_blue.png"
+                                alt="List Icon"
+                                width="30px"
+                            />
+                            ৮০ টি লাইভ ক্লাস
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img
+                                src="../assets/images/icons/list_icon_blue.png"
+                                alt="List Icon"
+                                width="30px"
+                            />
+                            ৪৭ টি শর্ট কনটেস্ট
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img
+                                src="../assets/images/icons/list_icon_blue.png"
+                                alt="List Icon"
+                                width="30px"
+                            />
+                            ১০ টি লং কনটেস্ট
+                        </div>
+                    </div>
+                    <div
+                        class="bg-shohoj-gray-bg rounded-lg p-8 flex flex-col items-start gap-4"
+                    >
+                        <div class="flex items-center gap-3">
+                            <img
+                                src="../assets/images/icons/list_icon_blue.png"
+                                alt="List Icon"
+                                width="30px"
+                            />
+                            ২৪ টি ডাউট সলভিং ক্লাস
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img
+                                src="../assets/images/icons/list_icon_blue.png"
+                                alt="List Icon"
+                                width="30px"
+                            />
+                            প্রতিদিন ৪ ঘন্টা সাপোর্ট ক্লাস
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <img
+                                src="../assets/images/icons/list_icon_blue.png"
+                                alt="List Icon"
+                                width="30px"
+                            />
+                            কোডিং মক টেস্ট
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- mentors section -->
+            <section
+                class="flex items-center justify-center flex-col py-10 px-5 mt-7 gap-8 bg-[#DBAA191A]"
+            >
+                <div class="flex flex-col items-center">
+                    <h3
+                        class="text-center font-shohoj-bangla font-semibold text-2xl md:text-3xl"
+                    >
+                        বুটক্যাম্প মেন্টর প্যানেল
+                    </h3>
+                    <div
+                        class="bg-shohoj-red w-[300px] md:w-[400px] h-1 rounded-xl"
+                    ></div>
+                </div>
+                <div
+                    class="max-w-[1140px] grid grid-cols-2 md:grid-cols-5 gap-5"
+                    id="mentor-card-container"
+                >
+                    <!-- mentor cards are injected here -->
                 </div>
             </section>
         </main>
@@ -480,5 +579,27 @@
                 </div>
             </div>
         </footer>
+
+        <!-- mentor card template -->
+        <template id="mentor-card-template">
+            <div
+                class="bg-white flex items-center justify-start text-center flex-col px-3 py-5 rounded-md gap-3"
+            >
+                <img id="mentor-image" src="" />
+                <a
+                    id="mentor-name"
+                    href="#"
+                    class="font-shohoj-english-bold text-md text-shohoj-blue underline uppercase"
+                >
+                </a>
+                <p
+                    class="font-shohoj-english-medium"
+                    id="mentor-designation"
+                ></p>
+            </div>
+        </template>
+
+        <!-- link js file -->
+        <script src="../assets/js/course-page-mentor-data-insert.js"></script>
     </body>
 </html>
